@@ -1,4 +1,4 @@
-package com.abh80.smartedge;
+package com.jpb.android.dynamicpill.smartedge;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.abh80.smartedge", appContext.getPackageName());
+        assertEquals("com.jpb.android.dynamicpill.smartedge", appContext.getPackageName());
     }
 }

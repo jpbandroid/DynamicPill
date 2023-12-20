@@ -1,4 +1,4 @@
-package com.abh80.smartedge;
+package com.jpb.android.dynamicpill.smartedge;
 
 import org.junit.Test;
 

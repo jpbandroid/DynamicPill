@@ -10,7 +10,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.abh80.smartedge"
+        applicationId "com.jpb.android.dynamicpill.smartedge"
         minSdk 26
         targetSdk 32
         versionCode 20204
@@ -46,7 +46,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.abh80.smartedge'
+    namespace 'com.jpb.android.dynamicpill.smartedge'
 }
 
 dependencies {
