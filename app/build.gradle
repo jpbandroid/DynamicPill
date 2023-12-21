@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 34
     sourceSets {
         github {
             manifest.srcFile 'github/AndroidManifest.xml'
@@ -12,7 +12,8 @@ android {
     defaultConfig {
         applicationId "com.jpb.android.dynamicpill.smartedge"
         minSdk 26
-        targetSdk 32
+        //noinspection EditedTargetSdkVersion
+        targetSdk 34
         versionCode 20204
         versionName "2.2.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
