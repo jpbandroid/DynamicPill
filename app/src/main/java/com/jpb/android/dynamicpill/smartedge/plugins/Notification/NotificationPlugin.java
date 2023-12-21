@@ -14,6 +14,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
@@ -88,7 +89,11 @@ public class NotificationPlugin extends BasePlugin {
         filter.addAction(context.getPackageName() + ".NOTIFICATION_POSTED");
         filter.addAction(context.getPackageName() + ".NOTIFICATION_REMOVED");
         filter.addAction(context.getPackageName() + ".NOTIFICATION_APPS_UPDATE");
-        context.registerReceiver(broadcastReceiver, filter);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            context.registerReceiver(broadcastReceiver, filter, Context.RECEIVER_EXPORTED);
+        } else {
+            context.registerReceiver(broadcastReceiver, filter);
+        }
         enabled_apps = NotificationManageAppsAdapter.parseEnabledApps(context.sharedPreferences.getString("notifications_apps", ""));
     }
 

@@ -18,6 +18,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.TypedValue;
@@ -159,7 +160,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         if (sharedPreferences.getBoolean("update_enabled", true) && BuildConfig.AUTO_UPDATE)
             startService(new Intent(this, UpdaterService.class));
         if (BuildConfig.AUTO_UPDATE)
-            registerReceiver(broadcastReceiver, new IntentFilter(getPackageName() + ".UPDATE_AVAIL"));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(broadcastReceiver, new IntentFilter(getPackageName() + ".UPDATE_AVAIL"), RECEIVER_EXPORTED);
+            }else {
+                registerReceiver(broadcastReceiver, new IntentFilter(getPackageName() + ".UPDATE_AVAIL"));
+            }
 
     }
 

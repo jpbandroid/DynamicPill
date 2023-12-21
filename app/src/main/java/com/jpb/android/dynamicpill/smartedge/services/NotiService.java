@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.util.Log;
@@ -24,7 +25,11 @@ public class NotiService extends NotificationListenerService {
         super.onCreate();
         IntentFilter filter = new IntentFilter(getPackageName() + ".ACTION_OPEN_CLOSE");
         filter.addAction(getPackageName() + ".ACTION_CLOSE");
-        registerReceiver(receiver, filter);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(receiver, filter, RECEIVER_EXPORTED);
+        }else {
+            registerReceiver(receiver, filter);
+        }
     }
 
     private final ArrayList<StatusBarNotification> notifications = new ArrayList<>();
