@@ -52,8 +52,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_add_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/sub_x"
@@ -65,8 +65,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_remove_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.slider.Slider
                         android:id="@+id/seekbar_x"
@@ -115,8 +115,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_add_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/sub_y"
@@ -128,8 +128,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_remove_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.slider.Slider
                         android:id="@+id/seekbar_y"
@@ -178,8 +178,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_add_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/sub_h"
@@ -191,8 +191,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_remove_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.slider.Slider
                         android:id="@+id/seekbar_h"
@@ -241,8 +241,7 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_add_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/sub_w"
@@ -254,8 +253,8 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_remove_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+
+                         />
 
                     <com.google.android.material.slider.Slider
                         android:id="@+id/seekbar_w"
@@ -304,8 +303,7 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_add_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+                         />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/sub_gap"
@@ -317,8 +315,7 @@
                         android:scaleType="center"
                         android:src="@drawable/ic_baseline_remove_24"
                         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.roundedImageViewCircle"
-                        app:strokeColor="?attr/colorPrimary"
-                        app:strokeWidth="1dp" />
+                         />
 
                     <com.google.android.material.slider.Slider
                         android:id="@+id/seekbar_gap"
@@ -334,7 +331,7 @@
 
             <Button
                 android:id="@+id/reset_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_outline_refresh_24"
                 android:text="@string/reset" />
