@@ -28,6 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.jpb.android.dynamicpill.smartedge.activities.MainActivity;
 import com.jpb.android.dynamicpill.smartedge.utils.CallBack;
 import com.jpb.android.dynamicpill.smartedge.R;
 import com.jpb.android.dynamicpill.smartedge.plugins.BasePlugin;
@@ -63,6 +64,7 @@ public class MediaSessionPlugin extends BasePlugin {
     private final Runnable r = new Runnable() {
         @Override
         public void run() {
+
             if (!expanded) return;
             if (mCurrent == null) {
                 closeOverlay();
