@@ -188,11 +188,11 @@ public class OverlayLayoutSettingActivity extends AppCompatActivity {
         y.setValue(sharedPreferences.getFloat("overlay_y", 0.67f));
         updateTexts();
         findViewById(R.id.reset_btn).setOnClickListener(l -> {
-            gap.setValue(40);
+            gap.setValue(64);
             w.setValue(100);
-            h.setValue(40);
+            h.setValue(31);
             x.setValue(0);
-            y.setValue(0.1f);
+            y.setValue(0.8f);
             onChange();
         });
 
